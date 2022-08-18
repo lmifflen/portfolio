@@ -1,6 +1,7 @@
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Introduction from './components/Introduction';
+import Landing from './pages/Landing';
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
      Luke's portfolio website
      <BrowserRouter>
      <Routes>
-     <Introduction path="/" />
+     <Route path="/" element={<Landing />} />
       </Routes>
      </BrowserRouter>
   

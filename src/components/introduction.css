@@ -1,0 +1,17 @@
+.typewriter {
+    font-family: 'Epilogue';
+font-style: normal;
+font-weight: 600;
+font-size: 51.7778px;
+line-height: 53px;
+/* identical to box height */
+
+-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+
+color: white; 
+    /* text-shadow: 0 0 10px #000; */ 
+  
+
+
+}
