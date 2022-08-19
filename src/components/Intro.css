@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+    
+   
+}
+
+ .right h1 {
+font-family: 'epilogue', sans-serif;
+font-style: bold;
+font-weight: 100;
+font-size: 150px;
+line-height: 117.5%;
+/* or 176px */
+
+
+color: #2D2C2C;
+} 
