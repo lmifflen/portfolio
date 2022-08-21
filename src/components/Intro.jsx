@@ -16,7 +16,8 @@ const Intro = () => {
           HELLO <br></br>I'M LUKE{" "}
         </h1>
         <div className="FSD"> Full Stack Developer </div>
-        <div> Technical Project Manager </div>
+        <div className="PM"> Technical Project Manager </div>
+        <div className="FSD"> Adventurer </div>
       </div>
       
     </div>
