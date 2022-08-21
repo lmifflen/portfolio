@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './app.scss';
-import Intro from './components/Intro';
+import About from './components/About/About';
+import Intro from './components/Intro/Intro';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
      <BrowserRouter>
      <Routes>
      <Route path="/" element={<Intro />} />
+     <Route path="/about" element={<About />} />
       </Routes>
      </BrowserRouter>
   
