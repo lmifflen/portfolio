@@ -14,13 +14,21 @@
 }
 
  .right h1 {
-font-family: 'epilogue', sans-serif;
-font-style: bold;
-font-weight: 100;
-font-size: 150px;
-line-height: 117.5%;
-/* or 176px */
-
-
-color: #2D2C2C;
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 150px;
+    line-height: 117.5%;
+    /* or 176px */
+    
+    
+    color: #2D2C2C;
 } 
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    
+   
+}
