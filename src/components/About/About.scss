@@ -1,0 +1,104 @@
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #131212;
+  }
+  
+  
+  .about-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 48vw;
+    height: 90vh;
+  }
+  .about-left h1 {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+  
+    /* Gray 6 */
+  
+    color: #f2f2f2;
+  }
+  .about-me-container {
+    
+    width:30vw;
+  
+  }
+  .about-bold {
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 254;
+    font-size: 48px;
+    line-height: 120%;
+    /* or 58px */
+  
+    font-variant: small-caps;
+  
+    /* Gray 6 */
+  
+    color: #f2f2f2;
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .assiniboine {
+  
+    bottom: -10vh;
+    height: 70%;
+  }
+  
+  .about-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 48vw;
+    height: 90vh;
+  }
+  .text {
+      font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  width: 40vw;
+  
+  /* or 27px */
+  
+  
+  /* Gray 6 */
+  
+  color: #F2F2F2;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  }
+  
+  .splitboard {
+    display: flex;
+    
+  
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+  }
+  
