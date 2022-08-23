@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Portfolio.css";
 
 const Portfolio = () => {
     const [currentSlider, setCurrentSlider] = useState(0);
@@ -46,16 +47,16 @@ const Portfolio = () => {
 
   return (
     <div className="profile" id="profile">
-      <div className="card">
+      <div className="card" style={{transform: `translateX(-${currentSlider * 100}vw)`}}>
         {data.map((data) => (
           <div className="card-container" key={data.id}>
             <div className="item" onClick={() => openInNewTab(data.link)}>
-              <div className="imageContainer">
+              <div className="image-container">
                 <img src={data.img} alt={""} id={data.id} />
               </div>
               <div>
-                <div className="textContainer">
-                  <div> Projects </div>
+                <div className="text-container">
+             
                   <div> {data.title} </div>
                   <div> {data.desc} </div>
                   <div> Roles </div>
@@ -66,8 +67,8 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
-      <img src="angle-left-solid.svg" className="arrow left" alt=""  onClick={()=>handleClick("left")}/>
-        <img src="angle-right-solid.svg" className="arrow right" alt="" onClick={()=>handleClick("right")}/>
+      <img src="angle-left-solid.svg" className="arrow-left" alt=""  onClick={()=>handleClick("left")}/>
+        <img src="angle-right-solid.svg" className="arrow-right" alt="" onClick={()=>handleClick("right")}/>
     </div>
   );
 };
