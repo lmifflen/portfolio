@@ -46,7 +46,7 @@ const Portfolio = () => {
   }; //If click left and current slider is less than 0, then move to #2. Else, minus 1. Else (right click) if current slider is less than data.length, +1. Else, = 0 (max, go back to 0)
 
   return (
-    <div className="profile" id="profile">
+    <div className="profile" id="projects">
       <div className="card" style={{transform: `translateX(-${currentSlider * 100}vw)`}}>
         {data.map((data) => (
           <div className="card-container" key={data.id}>
