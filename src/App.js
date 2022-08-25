@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './app.scss';
+import Contact from './components/Contact/Contact';
 // import About from './components/About/About';
 // import Intro from './components/Intro/Intro';
 import Navbar from './components/Navbar/Navbar';
@@ -14,6 +15,7 @@ function App() {
      <Routes>
      <Route path="/" element={<Home />} />
      {/* <Route path="/about" element={<About />} /> */}
+     <Route path="/contact" element={<Contact />} />
       </Routes>
      </BrowserRouter>
   
