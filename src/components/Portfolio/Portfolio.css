@@ -87,7 +87,9 @@
     }
     .arrow-left:hover {
         transform: scale(1.1);
+        cursor: pointer;
     }
     .arrow-right:hover {
         transform: scale(1.1);
+        cursor: pointer;
     }
