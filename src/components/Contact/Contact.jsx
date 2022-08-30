@@ -1,21 +1,30 @@
 
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
 
 
-const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+// const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+// const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+// const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
-const showAlert = () => {
-  alert("Message sent successfully");
-}
+const serviceId = "service_uek54ss";
+const templateID = "contact_form";
+const publicKey = "pMwI03an17N5Ox-k2";
+
+
 
 const Contact = () => {
+  const showAlert = () => {
+    alert("Message sent successfully");
+    setShow(false);
+  
+  }
   const form = useRef();
+  const [show, setShow] = useState(false);
 
   const sendEmail = (e) => {
+   
     e.preventDefault();
 
     
@@ -32,6 +41,7 @@ const Contact = () => {
           e.target.reset()
           console.log(result.text);
           console.log("message sent");
+        
         },
         (error) => {
           console.log(error.text);
@@ -60,7 +70,7 @@ const Contact = () => {
           </form>
         </div>
     //   </div>
-    // </div>
+    //  </div>
   );
 };
 

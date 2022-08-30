@@ -1,5 +1,5 @@
 .formbackground {
-    background-color: rgb(189, 244, 247);
+    background-color: #2D2C2C;
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,7 +30,11 @@
     margin: 0 auto;
     height: 55vh;
     border: 1px solid black;
+    background-color: #2D2C2C;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    
   }
   
   .contactform {
@@ -39,7 +43,7 @@
     margin: 0 auto;
     align-items: center;
     padding: 60px;
-    background-color: rgba(255,255,255,.7);
+    background-color: #2D2C2C;
     border-radius: 20px;
     /* margin-top: 110px; */
     
