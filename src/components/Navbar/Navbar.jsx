@@ -15,16 +15,16 @@ const Navbar = () => {
       <div className="navlist-container">
       <ul className={click ? "nav-menu active" : "nav-list"}>
         <li>
-          <a href="#home">Home</a>
+          <a href="#home" onClick={handleClick}>Home</a>
         </li>
         <li>
-          <a href="#about">About</a>
+          <a href="#about" onClick={handleClick}>About</a>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <a href="#projects" onClick={handleClick}>Projects</a>
         </li>
         <li>
-          <div className="contact-button"> <ChatPopup></ChatPopup>
+          <div className="contact-button" onClick={handleClick}> <ChatPopup></ChatPopup>
            
           </div>
           
