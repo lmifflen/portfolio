@@ -4,13 +4,11 @@ import emailjs from "@emailjs/browser";
 import "./Contact.css";
 
 
-// const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-// const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-// const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
-const serviceId = "service_uek54ss";
-const templateID = "contact_form";
-const publicKey = "pMwI03an17N5Ox-k2";
+
 
 
 
