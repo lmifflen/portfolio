@@ -17,6 +17,14 @@
   align-self: stretch;
   flex-grow: 0;
 }
+.holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+ 
+}
 .hamburger {
   display: none;
 }
@@ -154,5 +162,37 @@
 
   .navbar .active {
     display: none;
+  }
+  .contact-button {
+    /* Auto layout */
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 0px;
+  
+    width: 100px;
+    height: 35px;
+  
+    background: #2d2c2c;
+  
+    font-family: "Epilogue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+  
+    /* White */
+  
+    color: #ffffff;
+  
+    /* Inside auto layout */
+  
+    flex: none;
+    order: 1;
+    flex-grow: 0;
   }
 }
