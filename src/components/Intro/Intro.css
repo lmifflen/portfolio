@@ -97,7 +97,8 @@
   }
   .imageContainer img {
     width: 90vw;
-    height: 50vh;
+    height: 35vh;
+    
   }
   .FSD {
     display: flex;
