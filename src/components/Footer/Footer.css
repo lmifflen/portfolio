@@ -49,3 +49,10 @@ color: #000000;
     transform: scale(1.04);
     cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+
+.footer-icon img {
+    height: 5vh;
+}
+
+}
