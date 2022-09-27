@@ -1,17 +1,19 @@
 import React, { useState } from "react";
 import "./Portfolio.css";
+import data from "./data.js";
+
 
 const Portfolio = () => {
-    const [currentSlider, setCurrentSlider] = useState(0);
+  const [currentSlider, setCurrentSlider] = useState(0);
   const data = [
     {
       id: "1",
       title: "A Full Stack Web Application Built Using:",
       desc: `JavaScript, ReactJS, NodeJS, ExpressJS, MySQL, REST API, Git, 
             Socket.io, Passport, Trello`,
-      roles: " Project Manager  Full Stack Developer Scrum Master",
+      roles: "Roles:  Project Manager  Full Stack Developer Scrum Master",
 
-      img: "./Wink.PNG",
+      img: "./Wink.svg",
       link: `https://www.youtube.com/watch?v=Nv7JzOsvkq4`,
     },
     {
@@ -19,7 +21,7 @@ const Portfolio = () => {
       title: "A Full Stack Web Application Built Using:",
       desc: `JavaScript, ReactJS, NodeJS, ExpressJS, REST API, Git, MongoDB,
       Mapbox, Auth0, Trello, Heroku`,
-      roles: " Project Manager  Full Stack Developer Scrum Master",
+      roles: "Roles: Project Manager  Full Stack Developer Scrum Master",
       img: "./Cycle.PNG",
       link: `https://city-cycle-client.herokuapp.com/`,
     },
@@ -44,10 +46,21 @@ const Portfolio = () => {
           currentSlider < data.length - 1 ? currentSlider + 1 : 0
         );
   }; //If click left and current slider is less than 0, then move to #2. Else, minus 1. Else (right click) if current slider is less than data.length, +1. Else, = 0 (max, go back to 0)
+  // const roles = data.roles ?  (
+  //   <div>
+  //     <div> Roles: </div>
+  //     <div> {data.roles} </div>{" "}
+  //   </div>
+  // ) : (
+  //   <div>{data.roles}</div>
+  // );
 
   return (
     <div className="profile" id="projects">
-      <div className="card" style={{transform: `translateX(-${currentSlider * 100}vw)`}}>
+      <div
+        className="card"
+        style={{ transform: `translateX(-${currentSlider * 100}vw)` }}
+      >
         {data.map((data) => (
           <div className="card-container" key={data.id}>
             <div className="item" onClick={() => openInNewTab(data.link)}>
@@ -56,10 +69,10 @@ const Portfolio = () => {
               </div>
               <div>
                 <div className="text-container">
-             
                   <div> {data.title} </div>
                   <div> {data.desc} </div>
-                  <div> Roles </div>
+           
+  
                   <div> {data.roles} </div>
                 </div>
               </div>
@@ -67,8 +80,18 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
-      <img src="angle-left-solid.svg" className="arrow-left" alt=""  onClick={()=>handleClick("left")}/>
-        <img src="angle-right-solid.svg" className="arrow-right" alt="" onClick={()=>handleClick("right")}/>
+      <img
+        src="angle-left-solid.svg"
+        className="arrow-left"
+        alt=""
+        onClick={() => handleClick("left")}
+      />
+      <img
+        src="angle-right-solid.svg"
+        className="arrow-right"
+        alt=""
+        onClick={() => handleClick("right")}
+      />
     </div>
   );
 };

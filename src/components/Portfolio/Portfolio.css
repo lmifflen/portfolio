@@ -93,3 +93,28 @@
         transform: scale(1.1);
         cursor: pointer;
     }
+    @media screen and (max-width: 768px) {
+      .item {
+        width: 90%;
+        height: 70%;
+      }
+     
+      .image-container img {
+        height: 25vh;
+        width: 85vw;
+      }
+      .text-container {
+        font-size: 15px;
+      }
+      .arrow-left {
+        height: 30px;
+        left: 50px;
+        top: 20vh;
+      }
+      .arrow-right {
+        height: 30px;
+        right: 50px;
+        top: 20vh;
+      }
+
+    }
