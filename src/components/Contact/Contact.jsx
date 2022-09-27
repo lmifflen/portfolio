@@ -15,7 +15,7 @@ const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 const Contact = () => {
   const showAlert = () => {
     alert("Message sent successfully");
-    setShow(false);
+    setShow(!show);
   
   }
   const form = useRef();
@@ -50,12 +50,13 @@ const Contact = () => {
   return (
     // <div className="formbackground">
     //   <div className="formimage">
-        <div className="contactcontainer">
+        <div className={"contactcontainer"}>
+   
           <form className="contactform" ref={form} onSubmit={sendEmail}>
-            <div className="contactus">Contact Us</div>
+            <div className="contactus">Chat with Luke</div>
             <div className="touch">Let's get in touch</div>
             <div className="chatform">
-              We're open for any suggestion or just to have a chat
+              I want to hear from you! Please fill out the form below and I will get back to you as soon as possible.
             </div>
             <label className="labelform">Name</label>
             <input className="inputform" type="text" name="user_name" />

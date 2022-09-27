@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Portfolio.css";
-import data from "./data.js";
+
 
 
 const Portfolio = () => {

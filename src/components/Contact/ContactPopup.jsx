@@ -12,7 +12,7 @@ const ChatPopup = () => {
         
         </div>
         
-        <div className={show ? 'chat-btn' : "chat-btn-active"} onClick={() => setShow(prevCheck => !prevCheck)} >Let's Talk</div>
+        <div className={show ? 'chat-btn' : "chat-btn-active"} onClick={() => setShow(!show)} >Let's Talk</div>
         </div>
   )
 }
