@@ -28,7 +28,7 @@
 .hamburger {
   display: none;
 }
-.logo {
+/* .logo {
   font-family: "Epilogue";
   font-style: normal;
   font-weight: 600;
@@ -38,7 +38,7 @@
   font-size: 40px;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-}
+} */
 .nav-list {
   display: flex;
   flex-direction: row;
