@@ -20,7 +20,7 @@ const About = () => {
         />
       </div>
       <div className="about-right">
-        <div className="text">
+        <div className="about-text">
           I am an adventurous, hard working Full Stack Developer and Technical
           Project Manager with a thirst for knowledge. My vision, dedication to
           the task at hand, leadership abilities, and relaxed personality make
