@@ -13,11 +13,9 @@ const Navbar = () => {
       <div className="logo">
         <img src="./Logo.png" alt="logo" />
       </div>
-      <div className="contact-button"> <ChatPopup></ChatPopup>
-           
+     
           </div>
-          </div>
-      <div className="navlist-container">
+      {/* <div className="navlist-container"> */}
      
           
           
@@ -32,25 +30,24 @@ const Navbar = () => {
         <li>
           <a href="#projects" onClick={handleClick}>Projects</a>
         </li>
-        
+        <div className="contact-button"> <ChatPopup></ChatPopup>
+           
+           </div>
         
       </ul>
-      </div>
-      <div
+      {/* </div> */}
+      
+       <div
               className="hamburger"
               onClick={handleClick}
               style={{
                 marginBottom: "1rem",
               }}
-            >
-              <img src="./hamburger.svg" alt="hamburger" />
-                {/* {click ? (
-                  <BiMenuAltLeft className="icon" size={50} />
-                ) : (
-                  <BiMenu className="icon" size={50} />
-                )}
-              </Badge> */}
+            > 
+            <img src="./hamburger.svg" alt="hamburger" />
+             
             </div>
+           
     </div>
   );
 };
