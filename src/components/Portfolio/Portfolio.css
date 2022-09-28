@@ -76,12 +76,14 @@
 .arrow-left {
     height: 50px;
     position: absolute;
+    top: 50%;
     left: 100px;
     color: #2d2c2c;
   }
   .arrow-right {
       height: 50px;
       position: absolute;
+      top: 50%;
       right: 100px;
       color: #2d2c2c;
     }
