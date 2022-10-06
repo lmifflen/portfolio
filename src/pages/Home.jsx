@@ -8,7 +8,7 @@ import Portfolio from '../components/Portfolio/Portfolio'
 
 const Home = () => {
   return (
-    <div>
+    <div style={{overflow: 'hidden'}}>
 
 
     <Intro></Intro>
