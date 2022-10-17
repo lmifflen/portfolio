@@ -13,7 +13,7 @@ const Portfolio = () => {
             Socket.io, Passport, Trello`,
       roles: "Roles:  Project Manager  Full Stack Developer Scrum Master",
 
-      img: "./Wink.svg",
+      img: "./Wink.png",
       link: `https://www.youtube.com/watch?v=Nv7JzOsvkq4`,
     },
     {

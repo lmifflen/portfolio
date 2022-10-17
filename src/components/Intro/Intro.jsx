@@ -7,7 +7,7 @@ const Intro = () => {
     <div className="container" id="home">
       <div className="left">
         <div className="imageContainer">
-          <img src="./Luketest.svg" alt="Luketest" />
+          <img src="./LukePhoto.png" alt="Luketest" />
         </div>
       </div>
       <div className="right">

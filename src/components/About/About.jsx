@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 
+
 const About = () => {
   return (
     <div className="about-container" id="about">
@@ -15,7 +16,7 @@ const About = () => {
 
         <img
           className="assiniboine"
-          src="./Assiniboine.svg"
+          src="./Assiniboine.webp"
           alt="Assiniboine"
         />
       </div>
@@ -40,7 +41,7 @@ const About = () => {
           by email at lmifflen@gmail.com.
         </div>
         <div className="splitboard">
-          <img src="./Splitboard.svg" alt="Luke" />
+          <img src='./Splitboard.webp' alt="Luke" />
         </div>
       </div>
     </div>

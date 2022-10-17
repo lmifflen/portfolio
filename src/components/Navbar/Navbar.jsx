@@ -12,7 +12,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="holder">
       <div className="logo">
-        <img src="./Logo.PNG" alt="Logo" />
+        <img src="./Logo.png" alt="Logo" />
       </div>
      
           </div>
